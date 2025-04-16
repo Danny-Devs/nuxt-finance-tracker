@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { transactionView } from '~/constants';
+import { transactionViewOptions } from '~/constants';
 
-const selectedView = ref(transactionView[1]);
+const selectedView = ref(transactionViewOptions[1]);
 
 </script>
 
@@ -13,7 +13,7 @@ const selectedView = ref(transactionView[1]);
         <USelectMenu
           v-model="selectedView"
           class="flex items-center gap-2"
-          :items="transactionView"
+          :items="transactionViewOptions"
           :search-input="false"
         />
       </div>
